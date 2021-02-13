@@ -1,0 +1,336 @@
+@import 'utils/variables';
+@import 'base/base';
+@import 'components/container';
+@import './components/header';
+@import './components/footer';
+
+
+.section-portfolio {
+  padding-bottom: 100px;
+  padding-top: 60px;
+  background-color: $background-color;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-buttons {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+}
+
+.container-button {
+  text-align: center;
+}
+
+.buttons {
+  flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.button-type {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.button-type {
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+.button-link {
+  &:hover, &:focus{
+  color: $text-color;
+  background-color: $accent-color;
+  cursor: pointer;
+  border: none;
+  transform: translateY(-0.15em);
+  transition: color 0.25s, background-color 0.25s;
+  box-shadow: 0 0.5em 0.5em -0.4em $primary-text-color;
+  }
+}
+
+.button-link {
+  border: none;
+  font-weight: $min-bold-font-weight;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  letter-spacing: 0.03em;
+  transition-property: color, backround-color;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button {
+font-family:  $sec-font-family;
+font-weight:  $min-bold-font-weight;
+font-size: 16px;
+line-height: 1.62;
+
+text-align: center;
+letter-spacing: 0.03em;
+}
+.content-cards a {
+  &:hover, &:focus{
+      display: block;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+.content-cards a {
+  display: block;
+  border: 1px solid $border-portfolio;
+}
+/*набор контента */
+@media screen and (min-width: 768px) {
+  .content.link {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 21px 0;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 21px 0;
+}
+}
+@media screen and (min-width: 1200px) {
+  .contact.list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+}
+}
+
+@media screen and (min-width: 768px) {
+  .content-cards:not(:last-child) {
+    margin-bottom: 0;
+}
+}
+
+.content-cards {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .content-cards {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    height: auto;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .content-cards {
+    width: calc((100% - 6 * 15px) / 3);
+}
+}
+.content-cards:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.content.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link-content {
+  display: block;
+}
+.content-portfolio {
+  display: block;
+}
+
+.portfolio-card {
+  background: $text-color;
+  border-right: 1px solid $border-portfolio;
+  border-bottom: 1px solid $border-portfolio;
+  border-left: 1px solid $border-portfolio;
+  box-sizing: border-box;
+
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content-tittle {
+  margin: 0;
+  padding: 0;
+
+  font-family: $sec-font-family, sans-serif;
+  color: $primary-text-color;
+  font-weight: $bold-font-weight;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.03em;
+}
+
+.content-text {
+  margin: 0;
+  padding: 0;
+
+  font-family: $sec-font-family, sans-serif;
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+}
+
+.container .client {
+  display: flex;
+}
+.client-link {
+  display: flex;
+}
+.description {
+  position: relative;
+  overflow: hidden;
+
+}
+.project-overlay {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: 250ms ease;
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-content {
+  &:focus, &:hover{
+    .project-overlay {
+      transform: translateY(0);
+    }
+  }
+} 
+
+.tech-description {
+  margin: 0;
+  padding: 63px 24px;
+  font-family: $sec-font-family;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.55;
+  color: $text-color;
+}
+
+.site-nav a {
+  color: $primary-text-color;
+  font-weight: $min-bold-font-weight;
+  font-size: 14px;
+  line-height: 1.4;
+
+  letter-spacing: 0.02em;
+}
+@media screen and (max-width: 1199px) {
+  .svg-mail,
+  .svg-tel {
+    display: none;
+   }
+}
+@media screen and (min-width: 1200px) {
+  .contact-mail:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contact a {
+  color: $secondare-text-color;
+  font-weight: $min-bold-font-weight;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.02em;
+}
+
+.site-studio {
+  & :hover,
+  & :focus {
+    color: $accent-color;
+  }
+} 
+
+.site-portfolio {
+  & :hover,
+  & :focus {
+    color: $accent-color;
+  }
+} 
+ 
+.contact-mail {
+  & :hover,
+  & :focus {
+    color: $accent-color;
+  }
+} 
+  
+.nav-contacts {
+  display: block;
+  &:hover,
+  &:focus {
+    fill: $accent-color}
+}
+  
+
+.svg-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.svg-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.subscribe-btn {
+  &__title {
+    font-family:  $sec-font-family;
+  
+  font-weight: $bold-font-weight;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+      color: #fff;
+  }
+}
+.link-navigation {
+  padding: 32px 0;
+}
