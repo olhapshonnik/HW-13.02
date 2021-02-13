@@ -8,6 +8,11 @@
   .item {
     width: 450px;
   }
+  @media screen and (max-width: 767px) {
+    .feature.link {
+      padding-left: 15px;
+    }
+   }
   @media screen and (max-width: 1200px) {
     .feature.link {
       display: flex;

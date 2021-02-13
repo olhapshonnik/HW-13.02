@@ -981,6 +981,12 @@ a {
   width: 450px;
 }
 
+@media screen and (max-width: 767px) {
+  .feature.link {
+    padding-left: 15px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .feature.link {
     display: -webkit-box;
@@ -1794,8 +1800,6 @@ footer {
     width: 358px;
     margin-bottom: 0;
     height: 50px;
-    padding-left: 16px;
-    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1804,10 +1808,9 @@ footer {
     background-color: inherit;
     color: #000;
     padding-top: 15px;
-    padding-right: 387px;
+    padding-right: 200px;
     padding-bottom: 15px;
-    padding-left: 15px;
-    margin-right: 12px;
+    margin-right: 0;
     color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -1821,16 +1824,6 @@ footer {
 .icon-telegram {
   width: 24px;
   height: 24px;
-}
-
-@media screen and (max-width: 1200px) {
-  .subscribe {
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
